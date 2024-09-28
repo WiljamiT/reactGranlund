@@ -1,8 +1,6 @@
-import React from 'react';
-
 const Nav = () => {
   return (
-    <div><p>asd</p></div>
+    <div><p>Nav</p></div>
   )
 }
 
