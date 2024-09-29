@@ -5,6 +5,9 @@ import 'leaflet/dist/leaflet.css';
 import Map from './components/Map';
 import { IconCloudDemo } from './components/Icon';
 import ShinyButton from './components/magicui/shiny-button';
+import LocationsDisplay from './components/LocationsDisplay';
+import FinancialChart from './components/FinancialChart';
+import FinancialChartBar from './components/FinancialChartBar';
 
 
 function App() {
@@ -17,6 +20,9 @@ function App() {
     <ShinyButton>Button</ShinyButton>
       <Map />
       <IconCloudDemo />
+      <LocationsDisplay />
+      <FinancialChart />
+      <FinancialChartBar />
     </div>
   );
 }

@@ -1,63 +1,123 @@
 [
-    {
-      "address": "Malminkaari 21, 00700 Helsinki",
-      "location": { "lat": 60.2530131, "lng": 25.0155501 }
-    },
-    {
-      "address": "Salmentie 1, 63300 Alavus",
-      "location": { "lat": 62.5860428, "lng": 23.6191711 }
-    },
-    {
-      "address": "Piispantilankuja 4, 02240 Espoo",
-      "location": { "lat": 60.1623622, "lng": 24.7244659 }
-    },
-    {
-      "address": "Rajakatu 2 A, 30420 Forssa",
-      "location": { "lat": 60.8101029, "lng": 23.614512 }
-    },
-    {
-      "address": "Keilakatu 1, 13210 Hämeenlinna",
-      "location": { "lat": 61.000225, "lng": 24.488714 }
-    },
-    {
-      "address": "Koskenparras 1, 55100 Imatra",
-      "location": { "lat": 61.1707991, "lng": 28.7718945 }
-    },
-    {
-      "address": "Kauppakatu 29, 80100 Joensuu",
-      "location": { "lat": 62.6031934, "lng": 29.7621403 }
-    },
-    {
-      "address": "Kympinkatu 3 C, 40320 Jyväskylä",
-      "location": { "lat": 62.2532239, "lng": 25.7588471 }
-    },
-    {
-      "address": "Pohjolankatu 30, 87100 Kajaani",
-      "location": { "lat": 64.2268854, "lng": 27.724647 }
-    },
-    {
-      "address": "Keskuspuistokatu 9, 94100 Kemi",
-      "location": { "lat": 65.7355675, "lng": 24.5651275 }
-    },
-    {
-      "address": "Koppisentie 3, 67600 Kokkola",
-      "location": { "lat": 63.8271203, "lng": 23.1514411 }
-    },
-    {
-      "address": "Tornatorintie 3, 48100 Kotka",
-      "location": { "lat": 60.4664401, "lng": 26.9284653 }
-    },
-    {
-      "address": "Kauppalankatu 14, 45100 Kouvola",
-      "location": { "lat": 60.8699343, "lng": 26.7030793 }
-    },
-    {
-      "address": "Hyrräkatu 3, 70500 Kuopio",
-      "location": { "lat": 62.8970238, "lng": 27.7020846 }
-    },
-    {
-      "address": "Vesijärvenkatu 9D (6.krs), 15140 Lahti",
-      "location": { "lat": 60.9834663, "lng": 25.6621069 }
-    }
-  ]
-  
+  {
+    "address": "Malminkaari 21, 00700 Helsinki",
+    "location": { "lat": 60.2530131, "lng": 25.0155501 },
+    "btnText": "linkki"
+  },
+  {
+    "address": "Salmentie 1, 63300 Alavus",
+    "location": { "lat": 62.5860428, "lng": 23.6191711 }
+  },
+  {
+    "address": "Piispantilankuja 4, 02240 Espoo",
+    "location": { "lat": 60.1623622, "lng": 24.7244659 }
+  },
+  {
+    "address": "Rajakatu 2 A, 30420 Forssa",
+    "location": { "lat": 60.8101029, "lng": 23.614512 }
+  },
+  {
+    "address": "Keilakatu 1, 13210 Hämeenlinna",
+    "location": { "lat": 61.000225, "lng": 24.488714 }
+  },
+  {
+    "address": "Koskenparras 1, 55100 Imatra",
+    "location": { "lat": 61.1707991, "lng": 28.7718945 }
+  },
+  {
+    "address": "Kauppakatu 29, 80100 Joensuu",
+    "location": { "lat": 62.6031934, "lng": 29.7621403 }
+  },
+  {
+    "address": "Kympinkatu 3 C, 40320 Jyväskylä",
+    "location": { "lat": 62.2532239, "lng": 25.7588471 }
+  },
+  {
+    "address": "Pohjolankatu 30, 87100 Kajaani",
+    "location": { "lat": 64.2268854, "lng": 27.724647 }
+  },
+  {
+    "address": "Keskuspuistokatu 9, 94100 Kemi",
+    "location": { "lat": 65.7355675, "lng": 24.5651275 }
+  },
+  {
+    "address": "Koppisentie 3, 67600 Kokkola",
+    "location": { "lat": 63.8271203, "lng": 23.1514411 }
+  },
+  {
+    "address": "Tornatorintie 3, 48100 Kotka",
+    "location": { "lat": 60.4664401, "lng": 26.9284653 }
+  },
+  {
+    "address": "Kauppalankatu 14, 45100 Kouvola",
+    "location": { "lat": 60.8699343, "lng": 26.7030793 }
+  },
+  {
+    "address": "Hyrräkatu 3, 70500 Kuopio",
+    "location": { "lat": 62.8970238, "lng": 27.7020846 }
+  },
+  {
+    "address": "Vesijärvenkatu 9D (6.krs), 15140 Lahti",
+    "location": { "lat": 60.9834663, "lng": 25.6621069 }
+  },
+  {
+    "address": "Kasarmikatu 10, 53900 Lappeenranta",
+    "location": { "lat": 61.0592477, "lng": 28.1736835 }
+  },
+  {
+    "address": "Suurlohjankatu 10, 08100 Lohja",
+    "location": { "lat": 60.2512956, "lng": 24.0694208 }
+  },
+  {
+    "address": "Papintie 14, 04600 Mäntsälä",
+    "location": { "lat": 60.6261178, "lng": 25.3069746 }
+  },
+  {
+    "address": "Prikaatinkatu 3, 50100 Mikkeli",
+    "location": { "lat": 61.681411, "lng": 27.2606188 }
+  },
+  {
+    "address": "Elektroniikkatie 3-5, 90590 Oulu",
+    "location": { "lat": 65.0589646, "lng": 25.4394934 }
+  },
+  {
+    "address": "Kauppakatu 1, 76100 Pieksämäki",
+    "location": { "lat": 62.2995108, "lng": 27.1610423 }
+  },
+  {
+    "address": "Temppelikatu 8, 11100 Riihimäki",
+    "location": { "lat": 60.7366215, "lng": 24.7678109 }
+  },
+  {
+    "address": "Suosiolankatu 2, 96320 Rovaniemi",
+    "location": { "lat": 66.4958087, "lng": 25.6904433 }
+  },
+  {
+    "address": "Vipusenkatu 12, 57200 Savonlinna",
+    "location": { "lat": 61.8683765, "lng": 28.9150007 }
+  },
+  {
+    "address": "Tiedekatu 2, 60320 Seinäjoki",
+    "location": { "lat": 62.7869697, "lng": 22.8212919 }
+  },
+  {
+    "address": "Järvensivuntie 1, 33101 Tampere",
+    "location": { "lat": 61.4921264, "lng": 23.7826306 }
+  },
+  {
+    "address": "Laasmäenkatu 6, 20780 Kaarina",
+    "location": { "lat": 60.4203549, "lng": 22.3791391 }
+  },
+  {
+    "address": "Hovioikeudenpuistikko 19 A, 65100 Vaasa",
+    "location": { "lat": 63.096827, "lng": 21.6166554 }
+  },
+  {
+    "address": "Kuoppakankaankatu 2, 78200 Varkaus",
+    "location": { "lat": 62.3182686, "lng": 27.8598958 }
+  },
+  {
+    "address": "Vierimaantie 5, 84100 Ylivieska",
+    "location": { "lat": 64.0747331, "lng": 24.5153336 }
+  }
+]

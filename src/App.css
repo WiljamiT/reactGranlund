@@ -29,13 +29,38 @@
 }
 
 .map-container {
-  border: 1px solid red;
+  border: 1px solid blue;
 
   height: 100vh;
-  width: 90%;
 
   margin: 2rem auto;
   
+}
+
+.locations-container {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.locations {
+  border: 1px solid red;
+  margin: 0.25rem;
+  padding: 0.5rem;
+  width: 400px;
+}
+
+.map {
+  border: 1px solid black;
+  margin: 0.25rem;
+  width: 100%;
+}
+
+.test {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes App-logo-spin {

@@ -22,7 +22,7 @@ const MapComponent: React.FC = () => {
       
       {locationData.map((location, index) => (
         <Marker key={index} position={[location.location.lat, location.location.lng]}>
-          <Popup>{location.address}</Popup>
+          <Popup>{location.address} <br /> Linkki: {location.btnText}</Popup>
         </Marker>
       ))}
     </MapContainer>
