@@ -1,0 +1,17 @@
+nav {
+    border-bottom: 1px solid black;
+    height: 3rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+
+.nav-links, .nav-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
