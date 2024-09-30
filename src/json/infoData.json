@@ -1,0 +1,32 @@
+{
+    "companyInfo": [
+      { "svg": "globe", "title": "Palvelut", "value": "Koko Suomi" },
+      { "svg": "globe", "title": "Sijainti", "value": "30 toimipistettä" },
+      { "svg": "globe", "title": "Liikevaihto", "value": "+ 80 M €" },
+      { "svg": "globe", "title": "Perustettu", "value": "1960" },
+      { "svg": "globe", "title": "Ikä", "value": "64 vuotta" },
+      { "svg": "globe", "title": "Henkilöstö", "value": "1400 +" }
+    ],
+    "locations": [
+      { "title": "Uusimaa", "value": "4" },
+      { "title": "Päijät-Häme", "value": "2" },
+      { "title": "Kanta-Häme", "value": "2" },
+      { "title": "Pirkanmaa", "value": "3" },
+      { "title": "Keski-Suomi", "value": "1" },
+      { "title": "Pohjois-Savo", "value": "3" },
+      { "title": "Kainuu", "value": "1" },
+      { "title": "Pohjois-Karjala", "value": "1" },
+      { "title": "Etelä-Karjala", "value": "2" },
+      { "title": "Pohjanmaa", "value": "3" },
+      { "title": "Lapin maakunta", "value": "2" },
+      { "title": "Etelä-Savo", "value": "2" },
+      { "title": "Etelä-Pohjanmaa", "value": "2" },
+      { "title": "Uusimaa", "value": "2" }
+    ],
+    "headers": {
+        "nav": "Dashboard Demo",
+        "company": "Granlund",
+        "office": "Toimistot: 30"
+  }
+}
+  

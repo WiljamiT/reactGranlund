@@ -3,7 +3,7 @@
 } */
 
 .chart-card {
-    border: 1px solid grey;
+    border: 1px solid #ddd; 
     border-radius: 15px;
     padding: 1rem 1rem 1rem 0rem;
     margin-top: 5rem;

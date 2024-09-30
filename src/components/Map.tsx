@@ -4,6 +4,7 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import coordinatesData from '../json/locations.json';
 
+
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
   iconUrl: require('leaflet/dist/images/marker-icon.png'),
@@ -22,15 +23,14 @@ const MapComponent: React.FC = () => {
   return (
     <div className="map">
       <div className="table-container">
-        <h1>Locations:</h1>
+        <h1>Sijainnit: 30</h1>
         <ul>
-          {/* "All" option to show all markers */}
           <li onClick={() => handleLocationClick(null)}>
-            <strong>All</strong>
+            <i>Kaikki</i>
           </li>
           {coordinatesData.map((locationData, index) => (
             <li key={index} onClick={() => handleLocationClick(locationData.location)}>
-              <strong>{locationData.location}</strong>
+              <i>{locationData.location}</i>
             </li>
           ))}
         </ul>
@@ -42,7 +42,6 @@ const MapComponent: React.FC = () => {
         />
 
         {coordinatesData.map((coordinates, index) => {
-          // Render only the selected location's marker or all markers if none is selected
           if (selectedLocation === null || selectedLocation === coordinates.location) {
             return (
               <Marker key={index} position={[coordinates.coordinates.lat, coordinates.coordinates.lng]}>
@@ -52,7 +51,7 @@ const MapComponent: React.FC = () => {
               </Marker>
             );
           }
-          return null; // Don't render any marker if the location is not selected
+          return null;
         })}
       </MapContainer>
     </div>

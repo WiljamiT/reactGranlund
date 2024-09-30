@@ -34,6 +34,7 @@ function App() {
       </div>
       <IconCloudDemo />
       <Footer />
+      {/* <FirstChart /> */}
       
     </div>
   );

@@ -1,20 +1,28 @@
 .info-grid-container h1 {
     font-size: 1.5rem;
     text-align: left;
-    margin-left: 3.2rem;
+    margin-left: 16.2rem;
     font-weight: 700;
 }
 
 .info-grid-container h2 {
     font-size: 1.2rem;
     text-align: left;
-    margin-left: 3.2rem;
+    margin-left: 16.2rem;
     font-weight: 700;
+}
+
+.info-grid-container h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .infos-container {
   /* border: 1px solid red; */
-  margin: 5rem 5rem;
+  margin: 5rem 0rem;
+  padding: 8rem 5rem;
+  position: relative;
+  bottom: 3.1rem;
 }
 
 .info-grid {
@@ -25,7 +33,7 @@
     border-radius: 8px; 
 
     /* border: 1px solid red; */
-    margin: 0rem 2rem;
+    margin: 0rem 15rem;
   }
   
   .card {
@@ -37,7 +45,7 @@
     padding: 15px; 
     /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  */
     text-align: left; 
-    transition: transform 0.2s; 
+    /* transition: transform 0.2s;  */
   }
 
   .card svg {
@@ -45,9 +53,9 @@
     font-size: 1rem;
   }
   
-  .card:hover {
+  /* .card:hover {
     transform: scale(1.05); 
-  }
+  } */
   
   .card h3 {
     margin: 0 0 10px; 

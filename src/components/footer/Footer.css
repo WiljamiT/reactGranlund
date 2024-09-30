@@ -1,5 +1,42 @@
 footer {
     margin-top: 10rem;
-    background: gray;
-    height: 5rem;
+    background: #2f2f2f;
+    height: 20rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-infos {
+    border-top: 1px solid hsla(0,0%,100%,.4);
+    width: 1315px;
+    height: 98px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-infos a {
+    background-color: #cd5b1c;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-infos svg {
+    width: 16px;
+    height: 16px;
+    color: #fff;
+}
+
+.footer-infos p {
+    margin-left: 0;
+    color: #fff;
 }
