@@ -35,7 +35,7 @@ const MapComponent: React.FC = () => {
           ))}
         </ul>
       </div>
-      <MapContainer className="map-container" center={centerPosition} zoom={5}>
+      <MapContainer className="map-container" center={centerPosition} zoom={6}>
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

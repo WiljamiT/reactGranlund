@@ -29,6 +29,8 @@ const InfoGrid = () => {
   ];
 
   return (
+    <div className="infos-container">
+    
 <div className="info-grid-container">
 <h1>Corporate Dashboard</h1>
     <div className="info-grid">
@@ -52,6 +54,7 @@ const InfoGrid = () => {
         ))}
         </div>
     </div>
+</div>
 </div>
   );
 };

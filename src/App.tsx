@@ -12,6 +12,8 @@ import InfoGrid from './components/grid/InfoGrid';
 import FirstChart from './components/chart/first/FirstChart';
 import SecondChart from './components/chart/second/SecondChart';
 import ThirdChart from './components/chart/third/ThirdChart';
+import { IconCloudDemo } from './components/Icon';
+import Footer from './components/footer/Footer';
 
 
 function App() {
@@ -30,6 +32,8 @@ function App() {
       <SecondChart />
       <ThirdChart />
       </div>
+      <IconCloudDemo />
+      <Footer />
       
     </div>
   );

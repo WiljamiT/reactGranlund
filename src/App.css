@@ -1,26 +1,9 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-
 .chart-container-box {
   /* border: 1px solid blue; */
   display: flex;
   align-items: center;
   justify-content: space-around;
-
-  margin: 0rem 20rem;
+  margin: 0rem 2rem;
   padding-bottom: 2rem;
 }
 
@@ -39,19 +22,13 @@
   color: #61dafb;
 }
 
-.map {
-  /* border: 1px solid red; */
-  display: flex;
-  padding: 0.7rem;
-}
+
 
 .table-container {
   border: 1px solid grey;
   border-radius: 15px;
-  min-width: 20rem;
   width: auto;
   margin: 1rem 0.5rem 1rem 1rem;
-
   text-align: left;
   padding-left: 1rem;
 }
@@ -81,8 +58,11 @@
 
 .map {
   /* border: 1px solid black; */
-  margin: 0rem 20rem;
+  margin: 0rem 2rem;
   width: auto;
+  display: flex;
+  padding: 0.7rem;
+  
 }
 
 .test {
@@ -91,11 +71,42 @@
   justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 1600px) {
+  body {
+    /* background: lightblue; */
   }
-  to {
-    transform: rotate(360deg);
+
+  .map {
+    /* border: 1px solid black; */
+    margin: 0rem 5rem;
+    width: auto;
+    display: flex;
+    padding: 0.7rem;
+  }
+
+  .table-container {
+    border: 1px solid grey;
+    border-radius: 15px;
+    width: 20%;
+    margin: 1rem 0.5rem 1rem 2.55rem;
+    text-align: left;
+    padding-left: 1rem;
+  }
+
+  .map-container {
+    /* border: 1px solid blue; */
+    height: auto;
+    width: 100%;
+    margin: 1rem 2.55rem 1rem 0.5rem;
+    border-radius: 15px;
+  }
+
+  .chart-container-box {
+    /* border: 1px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5rem 5.91rem;
+    padding-bottom: 2rem;
   }
 }
