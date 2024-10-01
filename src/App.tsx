@@ -21,12 +21,7 @@ function App() {
     <div className="App">
       <Nav />
       <InfoGrid />
-    {/* <ShinyButton>Button</ShinyButton> */}
       <Map />
-      {/* <IconCloudDemo /> */}
-      {/* <LocationsDisplay /> */}
-      {/* <FinancialChart />
-      <FinancialChartBar /> */}
       <div className="chart-container-box">
       <FirstChart />
       <SecondChart />
@@ -34,7 +29,6 @@ function App() {
       </div>
       <IconCloudDemo />
       <Footer />
-      {/* <FirstChart /> */}
       
     </div>
   );
