@@ -1,11 +1,11 @@
 {
     "companyInfo": [
-      { "svg": "globe", "title": "Palvelut", "value": "Koko Suomi" },
-      { "svg": "globe", "title": "Sijainti", "value": "30 toimipistettä" },
-      { "svg": "globe", "title": "Liikevaihto", "value": "+ 80 M €" },
-      { "svg": "globe", "title": "Perustettu", "value": "1960" },
-      { "svg": "globe", "title": "Ikä", "value": "64 vuotta" },
-      { "svg": "globe", "title": "Henkilöstö", "value": "1400 +" }
+      { "svg": "FiGlobe", "title": "Palvelut", "value": "Koko Suomi" },
+      { "svg": "TfiLocationPin", "title": "Sijainti", "value": "30 toimipistettä" },
+      { "svg": "TfiMoney", "title": "Liikevaihto", "value": "+ 139M €" },
+      { "svg": "FaRegBuilding", "title": "Perustettu", "value": "1960" },
+      { "svg": "FiCalendar", "title": "Ikä", "value": "64 vuotta" },
+      { "svg": "MdGroups2", "title": "Henkilöstö", "value": "1400 +" }
     ],
     "locations": [
       { "title": "Uusimaa", "value": "4" },
@@ -25,8 +25,8 @@
     ],
     "headers": {
         "nav": "Dashboard Demo",
-        "company": "Granlund",
-        "office": "Toimistot: 30"
+        "company": "Granlund Dashboard Demo",
+        "office": "Toimistot:"
   }
 }
   

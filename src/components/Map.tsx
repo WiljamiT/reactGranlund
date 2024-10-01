@@ -24,6 +24,8 @@ const MapComponent: React.FC = () => {
     <div className="map">
       <div className="table-container">
         <h1>Sijainnit: 30</h1>
+        <p><i>Klikkaa nimeä nähdäksesi sijainti kartalla. Lisätietoja toimistosta saat klikkaamalla merkkiä.</i></p>
+        <br />
         <ul>
           <li onClick={() => handleLocationClick(null)}>
             <i>Kaikki</i>

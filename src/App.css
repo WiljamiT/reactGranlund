@@ -48,6 +48,10 @@ p {
   padding-left: 1rem;
 }
 
+.table-container p {
+  margin-left: 0;
+}
+
 .table-container h1 {
   font-size: 1.5rem;
   font-weight: 700;
