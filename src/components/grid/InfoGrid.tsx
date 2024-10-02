@@ -11,7 +11,6 @@ import { NumberTickerDemo } from '../Ticker';
 import { WordPullUp } from '../magicui/word-pull-up';
 import { FadeText } from '../magicui/fade-text';
 
-// Create a map to associate icon strings with the actual components
 const iconMap: Record<string, IconType> = {
   FiGlobe: FiGlobe,
   TfiLocationPin: TfiLocationPin,
@@ -28,11 +27,10 @@ const InfoGrid = () => {
         <h1><WordPullUp words={"Granlund Dashboard Demo"} /></h1>
         <div className="info-grid">
           {infoData.companyInfo.map((info, index) => {
-            // Safely get the Icon component from the iconMap
             const IconComponent = iconMap[info.svg];
             return (
               <div className="card" key={index}>
-                {IconComponent && <IconComponent />} {/* Render the icon if it exists */}
+                {IconComponent && <IconComponent />}
                 <h3>{info.title}</h3>
                 <p><FadeText
         direction="left"

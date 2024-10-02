@@ -15,7 +15,6 @@ const MapComponent: React.FC = () => {
   const [selectedLocation, setSelectedLocation] = useState<string | null>(null);
   const centerPosition: [number, number] = [62.000, 25.000];
 
-  // Handler to set the selected location
   const handleLocationClick = (location: string | null) => {
     setSelectedLocation(location);
   };
@@ -48,7 +47,7 @@ const MapComponent: React.FC = () => {
             return (
               <Marker key={index} position={[coordinates.coordinates.lat, coordinates.coordinates.lng]}>
                 <Popup>
-                  {coordinates.address} <br /> Linkki: {coordinates.btnText}
+                  {coordinates.address} <br /> <a href={coordinates.btnText} target="_blank" rel="noreferrer">Lue lisää</a>
                 </Popup>
               </Marker>
             );

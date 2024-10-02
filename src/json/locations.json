@@ -3,55 +3,55 @@
     "location": "Helsinki",
     "address": "Malminkaari 21, 00700 Helsinki",
     "coordinates": { "lat": 60.2530131, "lng": 25.0155501 },
-    "btnText": "linkki"
+    "btnText": "https://www.granlund.fi/sijainti/helsinki-paakonttori/"
   },
   {
     "location": "Alavus",
     "address": "Salmentie 1, 63300 Alavus",
     "coordinates": { "lat": 62.5860428, "lng": 23.6191711 },
-    "btnText": "linkki"
+    "btnText": "https://www.granlund.fi/sijainti/alavus/"
   },
   {
     "location": "Espoo",
     "address": "Piispantilankuja 4, 02240 Espoo",
     "coordinates": { "lat": 60.1623622, "lng": 24.7244659 },
-    "btnText": "linkki"
+    "btnText": "https://www.granlund.fi/sijainti/espoo/"
   },
   {
     "location": "Forssa",
     "address": "Rajakatu 2 A, 30420 Forssa",
     "coordinates": { "lat": 60.8101029, "lng": 23.614512 },
-    "btnText": "linkki"
+    "btnText": "https://www.granlund.fi/sijainti/forssa/"
   },
   {
     "location": "Hämeenlinna",
     "address": "Keilakatu 1, 13210 Hämeenlinna",
     "coordinates": { "lat": 61.000225, "lng": 24.488714 },
-    "btnText": "linkki"
+    "btnText": "https://www.granlund.fi/sijainti/hameenlinna/"
   },
   {
     "location": "Imatra",
     "address": "Koskenparras 1, 55100 Imatra",
     "coordinates": { "lat": 61.1707991, "lng": 28.7718945 },
-    "btnText": "linkki"
+    "btnText": "https://www.granlund.fi/sijainti/Imatra/"
   },
   {
     "location": "Joensuu",
     "address": "Kauppakatu 29, 80100 Joensuu",
     "coordinates": { "lat": 62.6031934, "lng": 29.7621403 },
-    "btnText": "linkki"
+    "btnText": "https://www.granlund.fi/sijainti/Joensuu/"
   },
   {
     "location": "Jyväskylä",
     "address": "Kympinkatu 3 C, 40320 Jyväskylä",
     "coordinates": { "lat": 62.2532239, "lng": 25.7588471 },
-    "btnText": "linkki"
+    "btnText": "https://www.granlund.fi/sijainti/Jyvaskyla/"
   },
   {
     "location": "Kajaani",
     "address": "Pohjolankatu 30, 87100 Kajaani",
     "coordinates": { "lat": 64.2268854, "lng": 27.724647 },
-    "btnText": "linkki"
+    "btnText": "https://www.granlund.fi/sijainti/Kajaani/"
   },
   {
     "location": "Kemi",

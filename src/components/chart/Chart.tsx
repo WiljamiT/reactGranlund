@@ -27,7 +27,7 @@ const Chart: React.FC<ChartProps> = ({ data, dataKey, title, value, percentageCh
   useEffect(() => {
     const handleResize = () => updateChartSize(setChartSize);
 
-    handleResize(); // Set initial size
+    handleResize();
     window.addEventListener('resize', handleResize);
 
     return () => {
