@@ -12,7 +12,6 @@ const useFinancialData = () => {
   const [data, setData] = useState<ChartData[]>([]);
 
   useEffect(() => {
-    console.log(financialData);
     const { years, Liikevaihto, Liiketulos, Tilikauden_tulos } = financialData.Liiketoiminta;
   
     const chartData: ChartData[] = years.map((year, index) => ({
