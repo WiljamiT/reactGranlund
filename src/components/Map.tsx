@@ -24,7 +24,6 @@ const MapComponent: React.FC = () => {
   const centerPosition: [number, number] = [62.000, 25.000];
 
   useEffect(() => {
-    // Fetch the data from the API
     fetch('https://granlund-demo-ebhxamf7e3c4d4bs.westeurope-01.azurewebsites.net/api/locations')
       .then((response) => response.json())
       .then((data) => {

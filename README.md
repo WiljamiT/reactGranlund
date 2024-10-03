@@ -1,5 +1,6 @@
 ## Granlund app
-
+- Azure Postgresql db jossa sijainnit tallessa, .NET-serveri hostattuna Azuren App Servicessä
+- UI hostattuna Azure Static Web Apps
 - Näytä toimistojen sijainnit kartalla
 - Anna lisätietoja toimistoista
 - Näytä taloustietoja
