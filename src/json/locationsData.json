@@ -1,0 +1,212 @@
+[
+  {
+    "locationName": "Helsinki",
+    "address": "Malminkaari 21, 00700 Helsinki",
+    "latitude": "60.2530131",
+    "longitude": "25.0155501",
+    "url": "https://www.granlund.fi/sijainti/helsinki-paakonttori/"
+  },
+  {
+    "locationName": "Alavus",
+    "address": "Salmentie 1, 63300 Alavus",
+    "latitude": "62.5860428",
+    "longitude": "23.6191711",
+    "url": "https://www.granlund.fi/sijainti/alavus/"
+  },
+  {
+    "locationName": "Espoo",
+    "address": "Piispantilankuja 4, 02240 Espoo",
+    "latitude": "60.1623622",
+    "longitude": "24.7244659",
+    "url": "https://www.granlund.fi/sijainti/espoo/"
+  },
+  {
+    "locationName": "Forssa",
+    "address": "Rajakatu 2 A, 30420 Forssa",
+    "latitude": "60.8101029",
+    "longitude": "23.614512",
+    "url": "https://www.granlund.fi/sijainti/forssa/"
+  },
+  {
+    "locationName": "Hämeenlinna",
+    "address": "Keilakatu 1, 13210 Hämeenlinna",
+    "latitude": "61.000225",
+    "longitude": "24.488714",
+    "url": "https://www.granlund.fi/sijainti/hameenlinna/"
+  },
+  {
+    "locationName": "Imatra",
+    "address": "Koskenparras 1, 55100 Imatra",
+    "latitude": "61.1707991",
+    "longitude": "28.7718945",
+    "url": "https://www.granlund.fi/sijainti/Imatra/"
+  },
+  {
+    "locationName": "Joensuu",
+    "address": "Kauppakatu 29, 80100 Joensuu",
+    "latitude": "62.6031934",
+    "longitude": "29.7621403",
+    "url": "https://www.granlund.fi/sijainti/Joensuu/"
+  },
+  {
+    "locationName": "Jyväskylä",
+    "address": "Kympinkatu 3 C, 40320 Jyväskylä",
+    "latitude": "62.2532239",
+    "longitude": "25.7588471",
+    "url": "https://www.granlund.fi/sijainti/Jyvaskyla/"
+  },
+  {
+    "locationName": "Kajaani",
+    "address": "Pohjolankatu 30, 87100 Kajaani",
+    "latitude": "64.2268854",
+    "longitude": "27.724647",
+    "url": "https://www.granlund.fi/sijainti/Kajaani/"
+  },
+  {
+    "locationName": "Kemi",
+    "address": "Keskuspuistokatu 9, 94100 Kemi",
+    "latitude": "65.7355675",
+    "longitude": "24.5651275",
+    "url": "linkki"
+  },
+  {
+    "locationName": "Kokkola",
+    "address": "Koppisentie 3, 67600 Kokkola",
+    "latitude": "63.8271203",
+    "longitude": "23.1514411",
+    "url": "linkki"
+  },
+  {
+    "locationName": "Kotka",
+    "address": "Tornatorintie 3, 48100 Kotka",
+    "latitude": "60.4664401",
+    "longitude": "26.9284653",
+    "url": "linkki"
+  },
+  {
+    "locationName": "Kouvola",
+    "address": "Kauppalankatu 14, 45100 Kouvola",
+    "latitude": "60.8699343",
+    "longitude": "26.7030793",
+    "url": "linkki"
+  },
+  {
+    "locationName": "Kuopio",
+    "address": "Hyrräkatu 3, 70500 Kuopio",
+    "latitude": "62.8970238",
+    "longitude": "27.7020846",
+    "url": "linkki"
+  },
+  {
+    "locationName": "Lahti",
+    "address": "Vesijärvenkatu 9D (6.krs), 15140 Lahti",
+    "latitude": "60.9834663",
+    "longitude": "25.6621069",
+    "url": "linkki"
+  },
+  {
+    "locationName": "Lappeenranta",
+    "address": "Kasarmikatu 10, 53900 Lappeenranta",
+    "latitude": "61.0592477",
+    "longitude": "28.1736835",
+    "url": "linkki"
+  },
+  {
+    "locationName": "Lohja",
+    "address": "Suurlohjankatu 10, 08100 Lohja",
+    "latitude": "60.2512956",
+    "longitude": "24.0694208",
+    "url": "linkki"
+  },
+  {
+    "locationName": "Mäntsälä",
+    "address": "Papintie 14, 04600 Mäntsälä",
+    "latitude": "60.6261178",
+    "longitude": "25.3069746",
+    "url": "linkki"
+  },
+  {
+    "locationName": "Mikkeli",
+    "address": "Prikaatinkatu 3, 50100 Mikkeli",
+    "latitude": "61.681411",
+    "longitude": "27.2606188",
+    "url": "linkki"
+  },
+  {
+    "locationName": "Oulu",
+    "address": "Elektroniikkatie 3-5, 90590 Oulu",
+    "latitude": "65.0589646",
+    "longitude": "25.4394934",
+    "url": "linkki"
+  },
+  {
+    "locationName": "Pieksämäki",
+    "address": "Kauppakatu 1, 76100 Pieksämäki",
+    "latitude": "62.2995108",
+    "longitude": "27.1610423",
+    "url": "linkki"
+  },
+  {
+    "locationName": "Riihimäki",
+    "address": "Temppelikatu 8, 11100 Riihimäki",
+    "latitude": "60.7366215",
+    "longitude": "24.7678109",
+    "url": "linkki"
+  },
+  {
+    "locationName": "Rovaniemi",
+    "address": "Suosiolankatu 2, 96320 Rovaniemi",
+    "latitude": "66.4958087",
+    "longitude": "25.6904433",
+    "url": "linkki"
+  },
+  {
+    "locationName": "Savonlinna",
+    "address": "Vipusenkatu 12, 57200 Savonlinna",
+    "latitude": "61.8683765",
+    "longitude": "28.9150007",
+    "url": "linkki"
+  },
+  {
+    "locationName": "Seinäjoki",
+    "address": "Tiedekatu 2, 60320 Seinäjoki",
+    "latitude": "62.7869697",
+    "longitude": "22.8212919",
+    "url": "linkki"
+  },
+  {
+    "locationName": "Tampere",
+    "address": "Järvensivuntie 1, 33101 Tampere",
+    "latitude": "61.4921264",
+    "longitude": "23.7826306",
+    "url": "linkki"
+  },
+  {
+    "locationName": "Kaarina",
+    "address": "Laasmäenkatu 6, 20780 Kaarina",
+    "latitude": "60.4203549",
+    "longitude": "22.3791391",
+    "url": "linkki"
+  },
+  {
+    "locationName": "Vaasa",
+    "address": "Hovioikeudenpuistikko 19 A, 65100 Vaasa",
+    "latitude": "63.096827",
+    "longitude": "21.6166554",
+    "url": "linkki"
+  },
+  {
+    "locationName": "Varkaus",
+    "address": "Kuoppakankaankatu 2, 78200 Varkaus",
+    "latitude": "62.3182686",
+    "longitude": "27.8598958",
+    "url": "linkki"
+  },
+  {
+    "locationName": "Ylivieska",
+    "address": "Vierimaantie 5, 84100 Ylivieska",
+    "latitude": "64.0747331",
+    "longitude": "24.5153336",
+    "url": "linkki"
+  }
+]
