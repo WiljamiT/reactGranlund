@@ -1,8 +1,8 @@
 <p align="center">
-    <h1 align="center">REACTGRANLUND</h1>
+    <h1 align="center">REACT GRANLUND</h1>
 </p>
 <p align="center">
-    <em><code>❯ REPLACE-ME</code></em>
+    <em><code>❯ Demo</code></em>
 </p>
 <p align="center">
 	<!-- local repository, no metadata badges. --></p>
