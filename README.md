@@ -1,15 +1,17 @@
-## Granlund app
-- Azure Postgresql db jossa sijainnit tallessa, .NET-serveri hostattuna Azuren App Servicessä
-- UI hostattuna Azure Static Web Apps
-- Näytä toimistojen sijainnit kartalla
-- Anna lisätietoja toimistoista
-- Näytä taloustietoja
-- Tyylitelty UI
+# Granlund App
 
-### Muuta
+- [Azure PostgreSQL](https://azure.microsoft.com/en-us/products/postgresql) DB, where office locations, data etc are stored
+- [.NET server](https://dotnet.microsoft.com/en-us/) hosted on [Azure App Service](https://azure.microsoft.com/en-us/products/app-service)
+- UI hosted on [Azure Static Web Apps](https://azure.microsoft.com/en-us/products/app-service/static)
+- Display office locations on a map
+- Provide detailed information about offices
+- Show financial data
+- Styled UI
 
-Sovellus näyttää toimistojen sijainnit perustuen niiden koordinaatteihin (Latitude & longitude) sekä taloustietoja.
+## Additional Information
 
-Osoitteet muutettu koordinaateiksi Geocoding API:lla
+The application displays office locations based on their coordinates (latitude & longitude), as well as financial data.  
+Addresses are converted into coordinates using a Geocoding API.
 
-Esim: https://maps.googleapis.com/maps/api/geocode/json?address=Prikaatinkatu+3,+Mikkeli,+Suomi&key=API_AVAIN...
+Example:  
+`https://maps.googleapis.com/maps/api/geocode/json?address=Prikaatinkatu+3,+Mikkeli,+Suomi&key=API_AVAIN...`
