@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import MoonLoader from 'react-spinners/MoonLoader'
 
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
@@ -21,6 +22,7 @@ interface LocationData {
 const MapComponent: React.FC = () => {
   const [locations, setLocations] = useState<LocationData[]>([]);
   const [selectedLocation, setSelectedLocation] = useState<string | null>(null);
+  const [loading, setLoading] = useState(true);
   const centerPosition: [number, number] = [62.000, 25.000];
 
   useEffect(() => {
@@ -28,9 +30,11 @@ const MapComponent: React.FC = () => {
       .then((response) => response.json())
       .then((data) => {
         setLocations(data);
+        setLoading(false);
       })
       .catch((error) => {
         console.error('Error fetching location data:', error);
+        setLoading(false);
       });
   }, []);
 
@@ -56,29 +60,35 @@ const MapComponent: React.FC = () => {
         </ul>
       </div>
 
-      <MapContainer className="map-container" center={centerPosition} zoom={6}>
-        <TileLayer
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        />
+      {loading ? ( 
+        <div className="map-loader">
+        <MoonLoader />
+        </div>
+      ) : (
+        <MapContainer className="map-container" center={centerPosition} zoom={6}>
+          <TileLayer
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          />
 
-        {locations.map((locationData, index) => {
-          if (selectedLocation === null || selectedLocation === locationData.locationName) {
-            return (
-              <Marker
-                key={index}
-                position={[locationData.latitude, locationData.longitude]} // Update to use latitude and longitude directly
-              >
-                <Popup>
-                  {locationData.address} <br />
-                  <a href={locationData.url} target="_blank" rel="noreferrer">Lue lisää</a>
-                </Popup>
-              </Marker>
-            );
-          }
-          return null;
-        })}
-      </MapContainer>
+          {locations.map((locationData, index) => {
+            if (selectedLocation === null || selectedLocation === locationData.locationName) {
+              return (
+                <Marker
+                  key={index}
+                  position={[locationData.latitude, locationData.longitude]}
+                >
+                  <Popup>
+                    {locationData.address} <br />
+                    <a href={locationData.url} target="_blank" rel="noreferrer">Lue lisää</a>
+                  </Popup>
+                </Marker>
+              );
+            }
+            return null;
+          })}
+        </MapContainer>
+      )}
     </div>
   );
 };
