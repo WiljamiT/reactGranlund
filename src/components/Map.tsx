@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import MoonLoader from 'react-spinners/MoonLoader'
+import MoonLoader from 'react-spinners/MoonLoader';
 
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
@@ -19,22 +19,27 @@ interface LocationData {
   url: string;
 }
 
+type Status = "idle" | "loading" | "error" | "success";
+
 const MapComponent: React.FC = () => {
   const [locations, setLocations] = useState<LocationData[]>([]);
   const [selectedLocation, setSelectedLocation] = useState<string | null>(null);
-  const [loading, setLoading] = useState(true);
-  const centerPosition: [number, number] = [62.000, 25.000];
+  const [status, setStatus] = useState<Status>("idle");
+
+  const centerPosition: [number, number] = [62.0, 25.0];
 
   useEffect(() => {
+    setStatus("loading");
+
     fetch('https://granlund-demo-ebhxamf7e3c4d4bs.westeurope-01.azurewebsites.net/api/locations')
       .then((response) => response.json())
       .then((data) => {
         setLocations(data);
-        setLoading(false);
+        setStatus("success");
       })
       .catch((error) => {
         console.error('Error fetching location data:', error);
-        setLoading(false);
+        setStatus("error");
       });
   }, []);
 
@@ -60,9 +65,13 @@ const MapComponent: React.FC = () => {
         </ul>
       </div>
 
-      {loading ? ( 
+      {status === "loading" ? (
         <div className="map-loader">
-        <MoonLoader />
+          <MoonLoader />
+        </div>
+      ) : status === "error" ? (
+        <div className="map-error">
+          <p>Virhe tietojen haussa. Yritä uudelleen myöhemmin.</p>
         </div>
       ) : (
         <MapContainer className="map-container" center={centerPosition} zoom={6}>
