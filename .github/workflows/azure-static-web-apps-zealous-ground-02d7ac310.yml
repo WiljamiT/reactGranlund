@@ -30,6 +30,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+        # Install Playwright system dependencies
+      - name: Install Playwright dependencies
+        run: npx playwright install-deps
+
       # Install Playwright browsers
       - name: Install Playwright browsers
         run: npx playwright install
