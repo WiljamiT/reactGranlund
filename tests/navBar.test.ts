@@ -5,7 +5,7 @@ test.describe('NavBar Tests', () => {
     let navBar: NavBar;
 
     test.beforeEach(async ({ page }) => {
-        await page.goto('http://localhost:3000/');
+        await page.goto('https://zealous-ground-02d7ac310.5.azurestaticapps.net');
         navBar = new NavBar(page);
     });
 

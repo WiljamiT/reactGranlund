@@ -36,7 +36,7 @@ class DashboardPage {
     }
 
     async navigate(): Promise<void> {
-        await this.page.goto('http://localhost:3000/');
+        await this.page.goto('https://zealous-ground-02d7ac310.5.azurestaticapps.net');
     }
 
     async getTitleText(): Promise<string> {
