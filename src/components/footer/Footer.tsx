@@ -1,4 +1,4 @@
-import './Footer.css';
+import "./Footer.css";
 import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
@@ -7,10 +7,12 @@ const Footer = () => {
       <div></div>
       <div className="footer-infos">
         <p>WT</p>
-        <a href="github.com"><FaGithub /></a>
+        <a href="github.com">
+          <FaGithub />
+        </a>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

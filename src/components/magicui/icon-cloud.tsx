@@ -79,9 +79,5 @@ export function IconCloud({ iconSlugs }: DynamicCloudProps) {
     );
   }, [data, theme]);
 
-  return (
-    <Cloud {...cloudProps}>
-      {renderedIcons}
-    </Cloud>
-  );
+  return <Cloud {...cloudProps}>{renderedIcons}</Cloud>;
 }

@@ -1,6 +1,6 @@
-import Chart from '../Chart';
-import './FirstChart.css';
-import useFinancialData from '../../../hooks/useFinancialData';
+import Chart from "../Chart";
+import "./FirstChart.css";
+import useFinancialData from "../../../hooks/useFinancialData";
 
 const FirstChart: React.FC = () => {
   const data = useFinancialData();
