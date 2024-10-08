@@ -30,6 +30,24 @@
     text-decoration: underline;
 }
 
+.map-container {
+    /* border: 1px solid blue; */
+    height: auto;
+    width: 100%;
+    margin: 1rem 1rem 1rem 0.5rem;
+    border-radius: 15px;
+    max-width: 800px;
+  }
+
+  .map {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5rem 0rem 5rem 0rem;
+    min-height: 100vh;
+  }
+
 
 
 @media screen and (max-width: 1024px) {
