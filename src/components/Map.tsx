@@ -3,8 +3,6 @@ import LocationList from "./LocationList";
 import MapDisplay from "./MapDisplay";
 import MoonLoader from "react-spinners/MoonLoader";
 
-const apiUrl = process.env.REACT_APP_API_URL;
-
 interface LocationData {
   id: number;
   locationName: string;
@@ -26,7 +24,7 @@ const MapComponent: React.FC = () => {
   useEffect(() => {
     setStatus("loading");
 
-    fetch(`${apiUrl}/api/locations`)
+    fetch(`https://granlund-demo-ebhxamf7e3c4d4bs.westeurope-01.azurewebsites.net/api/locations`)
       .then((response) => response.json())
       .then((data) => {
         setLocations(data);
