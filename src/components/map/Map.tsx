@@ -25,7 +25,9 @@ const MapComponent: React.FC = () => {
   useEffect(() => {
     setStatus("loading");
     // This uses hardcoded value, in dev use values from env
-    fetch(`https://granlund-demo-ebhxamf7e3c4d4bs.westeurope-01.azurewebsites.net/api/locations`)
+    fetch(
+      `https://granlund-demo-ebhxamf7e3c4d4bs.westeurope-01.azurewebsites.net/api/locations`,
+    )
       .then((response) => response.json())
       .then((data) => {
         setLocations(data);
@@ -43,7 +45,9 @@ const MapComponent: React.FC = () => {
 
   const filteredLocations = useMemo(() => {
     if (selectedLocation === null) return locations;
-    return locations.filter(location => location.locationName === selectedLocation);
+    return locations.filter(
+      (location) => location.locationName === selectedLocation,
+    );
   }, [locations, selectedLocation]);
 
   return (
