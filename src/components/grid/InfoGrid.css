@@ -1,16 +1,17 @@
+/* Default (Desktop) Styles */
 .info-grid-container h1 {
-    font-size: 1.5rem;
-    text-align: left;
-    margin-left: 8.1rem;
-    font-weight: 700;
+  font-size: 1.5rem;
+  text-align: left;
+  margin-left: 8.1rem;
+  font-weight: 700;
 }
 
 .info-grid-container h2 {
-    font-size: 1.2rem;
-    text-align: left;
-    margin-left: 16.2rem;
-    font-weight: 700;
-    display: flex;
+  font-size: 1.2rem;
+  text-align: left;
+  margin-left: 16.2rem;
+  font-weight: 700;
+  display: flex;
 }
 
 .info-grid-container h3 {
@@ -19,7 +20,6 @@
 }
 
 .infos-container {
-  /* border: 1px solid red; */
   margin: 5rem 0rem;
   padding: 8rem 5rem;
   position: relative;
@@ -27,48 +27,99 @@
 }
 
 .info-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-    gap: 20px; 
-    padding: 20px; 
-    border-radius: 8px; 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  gap: 20px; 
+  padding: 20px; 
+  border-radius: 8px;
+  margin: 0rem 15rem;
+}
 
-    /* border: 1px solid red; */
-    margin: 0rem 15rem;
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white; 
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  padding: 15px;
+  text-align: left;
+}
+
+.card svg {
+  height: 3rem;
+  font-size: 1rem;
+}
+
+.card h3 {
+  margin: 0 0 10px; 
+  color: #333;
+}
+
+.card p {
+  margin: 0; 
+  color: #666;
+}
+
+/* Tablet Styles (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+  .info-grid-container h1 {
+      font-size: 1.3rem;
+      margin-left: 5rem;
   }
-  
+
+  .info-grid-container h2 {
+      font-size: 1.1rem;
+      margin-left: 10rem;
+  }
+
+  .info-grid-container h3 {
+      font-size: 1rem;
+  }
+
+  .infos-container {
+      padding: 5rem 3rem;
+      margin: 4rem 0;
+  }
+
+  .info-grid {
+      margin: 0rem 5rem;
+      gap: 15px;
+  }
+
   .card {
-    display: flex;
-    flex-direction: column;
-    background-color: white; 
-    border: 1px solid #ddd; 
-    border-radius: 8px; 
-    padding: 15px; 
-    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  */
-    text-align: left; 
-    /* transition: transform 0.2s;  */
+      padding: 10px;
+  }
+}
+
+/* Mobile Styles (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .info-grid-container h1 {
+      font-size: 1.1rem;
+      margin-left: 0.32rem;
   }
 
-  .card svg {
-    height: 3rem;
-    font-size: 1rem;
-  }
-  
-  /* .card:hover {
-    transform: scale(1.05); 
-  } */
-  
-  .card h3 {
-    margin: 0 0 10px; 
-    color: #333; 
-  }
-  
-  .card p {
-    margin: 0; 
-    color: #666; 
+  .info-grid-container h2 {
+      font-size: 1rem;
+      margin-left: 0.64rem;
   }
 
-  @media screen {
-    
+  .info-grid-container h3 {
+      font-size: 0.9rem;
   }
-  
+
+  .infos-container {
+      padding: 3rem 1rem;
+      margin: 2rem 0;
+  }
+
+  .info-grid {
+      grid-template-columns: 1fr;
+      margin: 0;
+      padding: 10px;
+      gap: 10px;
+  }
+
+  .card {
+      padding: 10px;
+  }
+}

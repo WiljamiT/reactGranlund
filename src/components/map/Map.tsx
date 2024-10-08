@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
-import LocationList from "./LocationList";
+import React, { useState, useEffect, useCallback, useMemo } from "react";
+import LocationList from "../LocationList";
 import MapDisplay from "./MapDisplay";
 import MoonLoader from "react-spinners/MoonLoader";
+import "./Map.css";
 
 interface LocationData {
   id: number;
@@ -23,7 +24,7 @@ const MapComponent: React.FC = () => {
 
   useEffect(() => {
     setStatus("loading");
-
+    // This uses hardcoded value, in dev use values from env
     fetch(`https://granlund-demo-ebhxamf7e3c4d4bs.westeurope-01.azurewebsites.net/api/locations`)
       .then((response) => response.json())
       .then((data) => {
@@ -36,9 +37,14 @@ const MapComponent: React.FC = () => {
       });
   }, []);
 
-  const handleLocationClick = (locationName: string | null) => {
+  const handleLocationClick = useCallback((locationName: string | null) => {
     setSelectedLocation(locationName);
-  };
+  }, []);
+
+  const filteredLocations = useMemo(() => {
+    if (selectedLocation === null) return locations;
+    return locations.filter(location => location.locationName === selectedLocation);
+  }, [locations, selectedLocation]);
 
   return (
     <div className="map">
@@ -58,7 +64,7 @@ const MapComponent: React.FC = () => {
         </div>
       ) : (
         <MapDisplay
-          locations={locations}
+          locations={filteredLocations}
           selectedLocation={selectedLocation}
           centerPosition={centerPosition}
         />

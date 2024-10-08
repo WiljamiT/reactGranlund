@@ -13,7 +13,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 .nav-bar {
@@ -32,11 +31,9 @@
     background-color: #fff;
     position: relative;
     bottom: 3px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-size: 8rem;
     color: #00a651;
 }
@@ -73,3 +70,73 @@
     bottom: 2px;
 }
 
+@media screen and (max-width: 1024px) {
+    .nav-bar {
+        width: 100%;
+        padding: 0 20px;
+        justify-content: space-between;
+    }
+
+    .nav-logo {
+        height: 120px;
+        width: 120px;
+        font-size: 5rem;
+    }
+
+    .links h1 {
+        font-size: 1.2rem;
+        margin-right: 1rem;
+    }
+
+    .links h2 {
+        font-size: 1.2rem;
+        padding: 0.8rem 2rem;
+        margin-right: 1.5rem;
+        height: auto;
+    }
+
+    .links svg {
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-container {
+        height: 200px;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .nav-logo {
+        height: 80px;
+        width: 80px;
+        font-size: 3rem;
+        position: relative;
+        bottom: 0;
+    }
+
+    .nav-bar {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links h1, .links h2 {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+
+    .links h2 {
+        padding: 0.5rem 1.5rem;
+        margin-right: 0;
+    }
+
+    .nav-secondary-bar {
+        height: 0px;
+    }
+}

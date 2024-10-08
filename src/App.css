@@ -1,5 +1,4 @@
 
-
 .chart-container-box {
   /* border: 1px solid blue; */
   display: flex;
@@ -38,115 +37,21 @@ p {
   color: rgba(47,47,47,.8);
 }
 
-.table-container {
-  border: 1px solid #ddd; 
-  border-radius: 15px;
-  width: 100%;
-  max-width: 410px;
-  margin: 1rem 0.5rem 1rem 1rem;
-  text-align: left;
-  padding-left: 1rem;
-}
-
-.table-container p {
-  margin-left: 0;
-}
-
-.table-container h1 {
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.table-container li:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.map-container {
-  /* border: 1px solid blue; */
-  height: auto;
-  width: 100%;
-  margin: 1rem 1rem 1rem 0.5rem;
-  border-radius: 15px;
-  max-width: 800px;
-}
-
-.locations-container {
-  /* border: 1px solid red; */
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.locations {
-  /* border: 1px solid red; */
-  margin: 0.25rem;
-  padding: 0.5rem;
-  width: 400px;
-}
-
-.map {
-  /* border: 1px solid black; */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 5rem 0rem 5rem 0rem;
-  min-height: 100vh;
-}
-
-.map-loader {
-  border: 1px solid #ddd;
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 800px;
-}
-
-
-.test {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 @media only screen and (max-width: 1600px) {
-  body {
-    /* background: lightblue; */
-  }
-
-  .map {
-    /* border: 1px solid black; */
-    margin: 0rem 5rem;
-    width: auto;
-    display: flex;
-    padding: 0.7rem;
-  }
-
-  .table-container {
-    border: 1px solid grey;
-    border-radius: 15px;
-    width: 20%;
-    margin: 1rem 0.5rem 1rem 2.55rem;
-    text-align: left;
-    padding-left: 1rem;
-  }
-
-  .map-container {
-    /* border: 1px solid blue; */
-    height: auto;
-    width: 100%;
-    margin: 1rem 2.55rem 1rem 0.5rem;
-    border-radius: 15px;
-  }
-
   .chart-container-box {
-    /* border: 1px solid blue; */
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin: 5rem 5.91rem;
     padding-bottom: 2rem;
   }
+}
+  @media only screen and (max-width: 768px) {    
+    .chart-container-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 5rem 5.91rem;
+      padding-bottom: 2rem;
+    }
 }

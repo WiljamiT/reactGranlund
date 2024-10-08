@@ -2,7 +2,7 @@ import "./App.css";
 import Nav from "./components/navigation/Nav";
 
 import "leaflet/dist/leaflet.css";
-import Map from "./components/Map";
+import Map from "./components/map/Map";
 import InfoGrid from "./components/grid/InfoGrid";
 import FirstChart from "./components/chart/first/FirstChart";
 import SecondChart from "./components/chart/second/SecondChart";
