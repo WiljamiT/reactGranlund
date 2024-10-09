@@ -11,7 +11,7 @@ test.describe('Dashboard Tests', () => {
 
     test('should display the correct title', async () => {
         const title = await dashboardPage.getTitleText();
-        expect(title?.trim()).toBe('Granlund Dashboard Demo'); // This is correct.
+        expect(title?.trim()).toBe('Granlund Dashboard Demo');
     });
 
     test('should display the services card', async () => {

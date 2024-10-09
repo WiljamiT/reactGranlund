@@ -2,18 +2,16 @@ footer {
     margin-top: 10rem;
     background: #2f2f2f;
     height: 20rem;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: end;
 }
 
 .footer-infos {
     border-top: 1px solid hsla(0,0%,100%,.4);
     width: 1315px;
     height: 98px;
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,6 +26,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .footer-infos svg {

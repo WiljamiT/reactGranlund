@@ -9,10 +9,12 @@ import SecondChart from "./components/chart/second/SecondChart";
 import ThirdChart from "./components/chart/third/ThirdChart";
 import { IconCloudDemo } from "./components/Icon";
 import Footer from "./components/footer/Footer";
+// import Dashboard from "./dashboard/Dashboard";
 
 function App() {
   return (
     <div className="App">
+      {/* <Dashboard /> */}
       <Nav />
       <InfoGrid />
       <Map />

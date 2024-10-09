@@ -1,0 +1,23 @@
+{
+    "name": "Testi",
+    "Liiketoiminta": {
+      "years": ["2020/12", "2021/12", "2022/12", "2023/12"],
+      "Liikevaihto": {
+        "amount": [5000, 6000, 7000, 8000],
+        "change": ["5%", "10%", "15", "20%"]
+      },
+      "Liiketulos": {
+        "amount": [5000, 5000, 5000, 5000]
+      },
+      "Tilikauden_tulos": {
+        "amount": [5000, 5000, 5000, 5000]
+      },
+      "Käyttökate": {
+        "percentage": ["5%", "5.7%", "5.2%", "5.5%"]
+      },
+      "Liikevoitto": {
+        "percentage": ["5.1%", "5.9%", "5.4%", "5.8%"]
+      }
+    }
+}
+  
