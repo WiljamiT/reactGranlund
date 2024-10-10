@@ -1,12 +1,60 @@
-import React from 'react';
+import React from "react";
+import "./ChartDisplay.css";
+import CustomAreaChart from "../AreaChart/AreaChart";
+import CustomBarChart from "../BarChart/BarChart";
+import CustomLineChart from "../LineChart/LineChart";
+import CustomRadarChart from "../RadarChart/RadarChart";
 
-const ChartDisplay: React.FC<{ title: string; data: any }> = ({ title, data }) => {
+interface ChartDisplayProps {
+  companyData: {
+    name: string;
+    years: Array<{
+      year: string;
+      Liikevaihto: { amount: number };
+      Muutos: { amount: string };
+      Liiketulos: { amount: number };
+      Tilikauden_tulos: { amount: number };
+      Käyttökate: { amount: string };
+      Liikevoitto: { amount: string };
+    }>;
+  };
+  chartType: string;
+}
+
+const ChartDisplay: React.FC<ChartDisplayProps> = ({
+  companyData,
+  chartType,
+}) => {
+  const data = companyData.years.map((yearData) => ({
+    year: yearData.year,
+    Liikevaihto: yearData.Liikevaihto.amount,
+    Liiketulos: yearData.Liiketulos.amount,
+    Tilikauden_tulos: yearData.Tilikauden_tulos.amount,
+  }));
+
   return (
     <div className="my-4">
-      <h2 className="text-lg font-semibold">{title}</h2>
-      <div>
-        <p>Data: {JSON.stringify(data)}</p> 
-      </div>
+      <h3>{companyData.name} Taloustiedot</h3>
+
+      {chartType === "line" ? (
+        <div className="chart-div">
+          <CustomLineChart data={data} />
+        </div>
+      ) : chartType === "bar" ? (
+        <div className="chart-div">
+          <CustomBarChart data={data} />
+        </div>
+      ) : chartType === "area" ? (
+        <div className="chart-div">
+          <CustomAreaChart data={data} />
+        </div>
+      ) : chartType === "radar" ? (
+        <div className="chart-div">
+          <CustomRadarChart data={data} />
+        </div>
+      ) : (
+        <p>No chart type selected.</p>
+      )}
     </div>
   );
 };

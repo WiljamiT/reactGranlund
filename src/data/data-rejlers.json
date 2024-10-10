@@ -1,0 +1,90 @@
+{
+    "name": "Rejlers",
+    "years": [
+      {
+        "year": "2020/12",
+        "Liikevaihto": {
+          "amount": 77993000
+        },
+        "Muutos": {
+          "amount": "22.4%"
+        },
+        "Liiketulos": {
+          "amount": 1590000
+        },
+        "Tilikauden_tulos": {
+          "amount": 1350000
+        },
+        "Käyttökate": {
+          "amount": "6.3%"
+        },
+        "Liikevoitto": {
+          "amount": "2%"
+        }
+      },
+      {
+        "year": "2021/12",
+        "Liikevaihto": {
+          "amount": 95147000
+        },
+        "Muutos": {
+          "amount": "22%"
+        },
+        "Liiketulos": {
+          "amount": 3109000
+        },
+        "Tilikauden_tulos": {
+          "amount": 2377000
+        },
+        "Käyttökate": {
+          "amount": "7%"
+        },
+        "Liikevoitto": {
+          "amount": "3.3%"
+        }
+      },
+      {
+        "year": "2022/12",
+        "Liikevaihto": {
+          "amount": 95184000
+        },
+        "Muutos": {
+          "amount": "0%"
+        },
+        "Liiketulos": {
+          "amount": 5469000
+        },
+        "Tilikauden_tulos": {
+          "amount": 4270000
+        },
+        "Käyttökate": {
+          "amount": "9.3%"
+        },
+        "Liikevoitto": {
+          "amount": "5.7%"
+        }
+      },
+      {
+        "year": "2023/12",
+        "Liikevaihto": {
+          "amount": 87519000
+        },
+        "Muutos": {
+          "amount": "-8.1%"
+        },
+        "Liiketulos": {
+          "amount": 1076000
+        },
+        "Tilikauden_tulos": {
+          "amount": 344000
+        },
+        "Käyttökate": {
+          "amount": "4.8%"
+        },
+        "Liikevoitto": {
+          "amount": "1.2%"
+        }
+      }
+    ]
+  }
+  

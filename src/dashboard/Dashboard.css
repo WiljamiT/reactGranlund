@@ -1,0 +1,50 @@
+.dashboard {
+    border: 1px solid #ddd; 
+    margin: 10rem 15rem;
+    border-radius: 15px;
+    padding-bottom: 10rem;
+}
+
+.dashboard h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.dashboard h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.chart-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 2rem; 
+    padding: 0.5rem 0.5rem;
+    justify-items: center; 
+    align-items: center; 
+}
+
+@media screen and (max-width: 768px) {
+    .dashboard {
+        border: 1px solid #ddd; 
+        margin: 0.5rem 1rem;
+        border-radius: 15px;
+    }
+    
+    .dashboard h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    
+    .dashboard h2 {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    
+    .chart-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); 
+        gap: 1rem; 
+        padding: 5rem 0.5rem;
+    }
+}

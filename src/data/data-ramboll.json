@@ -1,0 +1,90 @@
+{
+    "name": "Ramboll",
+    "years": [
+      {
+        "year": "2020/12",
+        "Liikevaihto": {
+          "amount": 203000000
+        },
+        "Muutos": {
+          "amount": "-0.1%"
+        },
+        "Liiketulos": {
+          "amount": 11399000
+        },
+        "Tilikauden_tulos": {
+          "amount": 11664000
+        },
+        "Käyttökate": {
+          "amount": "9.5%"
+        },
+        "Liikevoitto": {
+          "amount": "5.6%"
+        }
+      },
+      {
+        "year": "2021/12",
+        "Liikevaihto": {
+          "amount": 214000000
+        },
+        "Muutos": {
+          "amount": "5.5%"
+        },
+        "Liiketulos": {
+          "amount": 13550000
+        },
+        "Tilikauden_tulos": {
+          "amount": 13373000
+        },
+        "Käyttökate": {
+          "amount": "9.6%"
+        },
+        "Liikevoitto": {
+          "amount": "6.3%"
+        }
+      },
+      {
+        "year": "2022/12",
+        "Liikevaihto": {
+          "amount": 222000000
+        },
+        "Muutos": {
+          "amount": "3.5%"
+        },
+        "Liiketulos": {
+          "amount": 11730000
+        },
+        "Tilikauden_tulos": {
+          "amount": 9840000
+        },
+        "Käyttökate": {
+          "amount": "8%"
+        },
+        "Liikevoitto": {
+          "amount": "5.3%"
+        }
+      },
+      {
+        "year": "2023/12",
+        "Liikevaihto": {
+          "amount": 230000000
+        },
+        "Muutos": {
+          "amount": "3.6%"
+        },
+        "Liiketulos": {
+          "amount": 8723000
+        },
+        "Tilikauden_tulos": {
+          "amount": 10165000
+        },
+        "Käyttökate": {
+          "amount": "6.3%"
+        },
+        "Liikevoitto": {
+          "amount": "3.8%"
+        }
+      }
+    ]
+  }
+  

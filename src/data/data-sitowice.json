@@ -1,0 +1,90 @@
+{
+    "name": "Sitowice",
+    "years": [
+      {
+        "year": "2020/12",
+        "Liikevaihto": {
+          "amount": 136000000
+        },
+        "Muutos": {
+          "amount": "9.8%"
+        },
+        "Liiketulos": {
+          "amount": 12532000
+        },
+        "Tilikauden_tulos": {
+          "amount": -466000
+        },
+        "Käyttökate": {
+          "amount": "13%"
+        },
+        "Liikevoitto": {
+          "amount": "9.1%"
+        }
+      },
+      {
+        "year": "2021/12",
+        "Liikevaihto": {
+          "amount": 139000000
+        },
+        "Muutos": {
+          "amount": "2.1%"
+        },
+        "Liiketulos": {
+          "amount": 9541000
+        },
+        "Tilikauden_tulos": {
+          "amount": 10595000
+        },
+        "Käyttökate": {
+          "amount": "10.9%"
+        },
+        "Liikevoitto": {
+          "amount": "6.9%"
+        }
+      },
+      {
+        "year": "2022/12",
+        "Liikevaihto": {
+          "amount": 153000000
+        },
+        "Muutos": {
+          "amount": "10%"
+        },
+        "Liiketulos": {
+          "amount": 9377000
+        },
+        "Tilikauden_tulos": {
+          "amount": 4338000
+        },
+        "Käyttökate": {
+          "amount": "10%"
+        },
+        "Liikevoitto": {
+          "amount": "6.1%"
+        }
+      },
+      {
+        "year": "2023/12",
+        "Liikevaihto": {
+          "amount": 156000000
+        },
+        "Muutos": {
+          "amount": "2.2%"
+        },
+        "Liiketulos": {
+          "amount": 5899000
+        },
+        "Tilikauden_tulos": {
+          "amount": 921000
+        },
+        "Käyttökate": {
+          "amount": "7.9%"
+        },
+        "Liikevoitto": {
+          "amount": "3.8%"
+        }
+      }
+    ]
+  }
+  

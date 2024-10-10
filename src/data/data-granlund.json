@@ -1,0 +1,90 @@
+{
+    "name": "Granlund",
+    "years": [
+      {
+        "year": "2020/12",
+        "Liikevaihto": {
+          "amount": 52768000
+        },
+        "Muutos": {
+          "amount": "5%"
+        },
+        "Liiketulos": {
+          "amount": 5913000
+        },
+        "Tilikauden_tulos": {
+          "amount": 6598000
+        },
+        "Käyttökate": {
+          "amount": "13%"
+        },
+        "Liikevoitto": {
+          "amount": "11.1%"
+        }
+      },
+      {
+        "year": "2021/12",
+        "Liikevaihto": {
+          "amount": 62403000
+        },
+        "Muutos": {
+          "amount": "18.3%"
+        },
+        "Liiketulos": {
+          "amount": 7635000
+        },
+        "Tilikauden_tulos": {
+          "amount": 8296000
+        },
+        "Käyttökate": {
+          "amount": "13.7%"
+        },
+        "Liikevoitto": {
+          "amount": "11.9%"
+        }
+      },
+      {
+        "year": "2022/12",
+        "Liikevaihto": {
+          "amount": 73869000
+        },
+        "Muutos": {
+          "amount": "18.4%"
+        },
+        "Liiketulos": {
+          "amount": 7668000
+        },
+        "Tilikauden_tulos": {
+          "amount": 7317000
+        },
+        "Käyttökate": {
+          "amount": "12.2%"
+        },
+        "Liikevoitto": {
+          "amount": "10.4%"
+        }
+      },
+      {
+        "year": "2023/12",
+        "Liikevaihto": {
+          "amount": 88923000
+        },
+        "Muutos": {
+          "amount": "20.4%"
+        },
+        "Liiketulos": {
+          "amount": 19159000
+        },
+        "Tilikauden_tulos": {
+          "amount": 19243000
+        },
+        "Käyttökate": {
+          "amount": "20.5%"
+        },
+        "Liikevoitto": {
+          "amount": "18.8%"
+        }
+      }
+    ]
+  }
+  

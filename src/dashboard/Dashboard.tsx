@@ -1,32 +1,52 @@
-import React, { useState, useEffect } from 'react';
-import DashboardNav from './dashboardnav/DashboardNav';
-import ChartDisplay from './chart/ChartDisplay';
-import financialData from '../../src/json/financial.json';
-import financial2Data from '../../src/json/finnancial_testi.json';
-import { CompanyData, CompanyDataMapping } from '../../src/types'; // Import the types
+import React, { useState } from "react";
+import ChartDisplay from "./chart/ChartDisplay";
+import granlundData from "../../src/data/data-granlund.json";
+import rambollData from "../../src/data/data-ramboll.json";
+import rejlersData from "../../src/data/data-rejlers.json";
+import sitowiceData from "../../src/data/data-sitowice.json";
+import "./Dashboard.css";
+import DashboardNav from "./dashboardnav/DashboardNav";
 
 const Dashboard: React.FC = () => {
-  const dataMapping: CompanyDataMapping = {
-    Granlund: financialData,
-    Ramboll: financial2Data,
+  const [selectedCompany, setSelectedCompany] = useState<string>("all");
+  const [chartType, setChartType] = useState<string>("line");
+
+  const handleCompanyChange = (value: string) => {
+    setSelectedCompany(value);
   };
 
-  const [selectedCompany, setSelectedCompany] = useState<string>('Granlund'); 
-  const [companyData, setCompanyData] = useState<CompanyData>(dataMapping[selectedCompany]);
-
-  const companies = Object.keys(dataMapping); 
-
-  useEffect(() => {
-    setCompanyData(dataMapping[selectedCompany]);
-  }, [selectedCompany]);
+  const handleChartTypeChange = (type: string) => {
+    setChartType(type);
+  };
 
   return (
-    <div>
-      <DashboardNav companies={companies} onSelect={setSelectedCompany} />
-      <ChartDisplay title="Liikevaihto" data={companyData.Liiketoiminta.Liikevaihto} />
-      <ChartDisplay title="Liiketulos" data={companyData.Liiketoiminta.Liiketulos} />
-      <ChartDisplay title="Tilikauden_tulos" data={companyData.Liiketoiminta.Tilikauden_tulos} />
-      <ChartDisplay title="Käyttökate" data={companyData.Liiketoiminta.Käyttökate} />
+    <div className="dashboard">
+      <DashboardNav
+        handleCompanyChange={handleCompanyChange}
+        handleChartTypeChange={handleChartTypeChange}
+      />
+      <div className="chart-container">
+        {selectedCompany === "all" && (
+          <>
+            <ChartDisplay companyData={granlundData} chartType={chartType} />
+            <ChartDisplay companyData={rambollData} chartType={chartType} />
+            <ChartDisplay companyData={rejlersData} chartType={chartType} />
+            <ChartDisplay companyData={sitowiceData} chartType={chartType} />
+          </>
+        )}
+        {selectedCompany === "granlund" && (
+          <ChartDisplay companyData={granlundData} chartType={chartType} />
+        )}
+        {selectedCompany === "ramboll" && (
+          <ChartDisplay companyData={rambollData} chartType={chartType} />
+        )}
+        {selectedCompany === "rejlers" && (
+          <ChartDisplay companyData={rejlersData} chartType={chartType} />
+        )}
+        {selectedCompany === "sitowice" && (
+          <ChartDisplay companyData={sitowiceData} chartType={chartType} />
+        )}
+      </div>
     </div>
   );
 };
