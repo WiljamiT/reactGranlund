@@ -1,3 +1,4 @@
+import { CHART_HEIGHT, CHART_WIDTH } from "../../lib/constants";
 import React from "react";
 import {
   BarChart,
@@ -30,7 +31,7 @@ const CustomBarChart: React.FC<CustomBarChartProps> = ({ data }) => {
   };
 
   return (
-    <ResponsiveContainer width={400} height={400}>
+    <ResponsiveContainer width={CHART_WIDTH} height={CHART_HEIGHT}>
       <BarChart data={data} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="year" />

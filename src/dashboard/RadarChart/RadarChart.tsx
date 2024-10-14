@@ -1,3 +1,4 @@
+import { CHART_HEIGHT, CHART_WIDTH } from "../../lib/constants";
 import {
   RadarChart,
   PolarGrid,
@@ -24,7 +25,7 @@ const CustomRadarChart: React.FC<CustomRadarChartProps> = ({ data }) => {
     return [`${(value / 1000000).toFixed(2)}M €`, ""];
   };
   return (
-    <ResponsiveContainer width={400} height={400}>
+    <ResponsiveContainer width={CHART_WIDTH} height={CHART_HEIGHT}>
       <RadarChart cx="50%" cy="50%" outerRadius="80%" data={data}>
         <PolarGrid />
         <PolarAngleAxis dataKey="year" />

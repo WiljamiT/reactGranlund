@@ -1,3 +1,4 @@
+import { CHART_HEIGHT, CHART_WIDTH } from "../../lib/constants";
 import {
   LineChart,
   Line,
@@ -31,7 +32,7 @@ const CustomLineChart: React.FC<CustomLineChartProps> = ({ data }) => {
 
   return (
     <>
-      <ResponsiveContainer width={400} height={400}>
+      <ResponsiveContainer width={CHART_WIDTH} height={CHART_HEIGHT}>
         <LineChart
           data={data}
           margin={{ top: 20, right: 20, left: 10, bottom: 20 }}
@@ -48,7 +49,7 @@ const CustomLineChart: React.FC<CustomLineChartProps> = ({ data }) => {
           <Line type="monotone" dataKey="Liiketulos" stroke="#82ca9d" />
           <Line type="monotone" dataKey="Tilikauden_tulos" stroke="#ffc658" />
           <Legend
-            layout="horizontal"
+            layout={window.innerWidth < 400 ? "vertical" : "horizontal"}
             verticalAlign="bottom"
             align="center"
             wrapperStyle={{ paddingTop: "20px" }}

@@ -58,12 +58,10 @@ select {
     }
     
     .select-div {
-        display: flex;
-        flex-direction: column;
-        padding: 0.25rem;
+        display: grid;
         align-items: center;
-        justify-content: space-between;
-        width: 50%;
+        justify-content: center;
+        margin-bottom: 1rem;
     }
     
     .select-div button {
@@ -72,6 +70,9 @@ select {
         border-radius: 15px;
         background-color: #ed8113;
         margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .select-div button:hover {

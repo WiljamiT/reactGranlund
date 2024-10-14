@@ -13,13 +13,7 @@
 
 @media screen and (max-width: 768px) {
     .chart-div {
-        border: 1px solid #ddd; 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: fit-content;
-        margin-left: 1.3rem;
-    }
-    
+        width: 330px;
+    }    
 }
 
