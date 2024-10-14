@@ -1,3 +1,5 @@
+import { ChartData } from "../../types";
+import { formatTooltip, formatYAxis } from "../../helpers/chartHelpers";
 import { CHART_HEIGHT, CHART_WIDTH } from "../../lib/constants";
 import React from "react";
 import {
@@ -12,24 +14,10 @@ import {
 } from "recharts";
 
 interface CustomBarChartProps {
-  data: Array<{
-    year: string;
-    Liikevaihto: number;
-    Liiketulos: number;
-    Tilikauden_tulos: number;
-  }>;
+  data: ChartData[];
 }
 
 const CustomBarChart: React.FC<CustomBarChartProps> = ({ data }) => {
-  const formatYAxis = (tickItem: number) => {
-    if (tickItem === 0) return "0";
-    return `${tickItem / 1000000}m €`;
-  };
-
-  const formatTooltip = (value: number) => {
-    return [`${(value / 1000000).toFixed(2)}M €`, ""];
-  };
-
   return (
     <ResponsiveContainer width={CHART_WIDTH} height={CHART_HEIGHT}>
       <BarChart data={data} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>

@@ -4,6 +4,7 @@ import CustomAreaChart from "../AreaChart/AreaChart";
 import CustomBarChart from "../BarChart/BarChart";
 import CustomLineChart from "../LineChart/LineChart";
 import CustomRadarChart from "../RadarChart/RadarChart";
+import { mapCompanyDataToChartData } from "../../utils/chartDataUtils"; // Adjust path as needed
 
 interface ChartDisplayProps {
   companyData: {
@@ -25,12 +26,7 @@ const ChartDisplay: React.FC<ChartDisplayProps> = ({
   companyData,
   chartType,
 }) => {
-  const data = companyData.years.map((yearData) => ({
-    year: yearData.year,
-    Liikevaihto: yearData.Liikevaihto.amount,
-    Liiketulos: yearData.Liiketulos.amount,
-    Tilikauden_tulos: yearData.Tilikauden_tulos.amount,
-  }));
+  const data = mapCompanyDataToChartData(companyData);
 
   return (
     <div className="my-4">

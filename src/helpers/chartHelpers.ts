@@ -12,3 +12,12 @@ export const updateChartSize = (
     setChartSize({ width: 400, height: 400 });
   }
 };
+
+export const formatYAxis = (tickItem: number) => {
+  if (tickItem === 0) return "0";
+  return `${tickItem / 1000000}m €`;
+};
+
+export const formatTooltip = (value: number) => {
+  return [`${(value / 1000000).toFixed(2)}M €`, ""];
+};

@@ -1,3 +1,5 @@
+import { ChartData } from "../../types";
+import { formatTooltip, formatYAxis } from "../../helpers/chartHelpers";
 import { CHART_HEIGHT, CHART_WIDTH } from "../../lib/constants";
 import React from "react";
 import {
@@ -12,24 +14,10 @@ import {
 } from "recharts";
 
 interface CustomAreaChartProps {
-  data: Array<{
-    year: string;
-    Liikevaihto: number;
-    Liiketulos: number;
-    Tilikauden_tulos: number;
-  }>;
+  data: ChartData[];
 }
 
 const CustomAreaChart: React.FC<CustomAreaChartProps> = ({ data }) => {
-  const formatYAxis = (tickItem: number) => {
-    if (tickItem === 0) return "0";
-    return `${tickItem / 1000000}m €`;
-  };
-
-  const formatTooltip = (value: number) => {
-    return [`${(value / 1000000).toFixed(2)}M €`, ""];
-  };
-
   return (
     <ResponsiveContainer width={CHART_WIDTH} height={CHART_HEIGHT}>
       <AreaChart

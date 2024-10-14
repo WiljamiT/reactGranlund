@@ -26,3 +26,10 @@ export interface CompanyData {
 export interface CompanyDataMapping {
   [key: string]: CompanyData;
 }
+
+export interface ChartData {
+  year: string;
+  Liikevaihto: number;
+  Liiketulos: number;
+  Tilikauden_tulos: number;
+}

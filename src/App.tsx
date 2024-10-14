@@ -7,9 +7,11 @@ import InfoGrid from "./components/grid/InfoGrid";
 import { IconCloudDemo } from "./components/Icon";
 import Footer from "./components/footer/Footer";
 import Dashboard from "./dashboard/Dashboard";
+import { DashboardProvider } from "./context/DashboardContext";
 
 function App() {
   return (
+    <DashboardProvider>
     <div className="App">
       <Nav />
       <InfoGrid />
@@ -18,6 +20,7 @@ function App() {
       <IconCloudDemo />
       <Footer />
     </div>
+    </DashboardProvider>
   );
 }
 

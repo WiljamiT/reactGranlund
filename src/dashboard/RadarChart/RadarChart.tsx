@@ -1,3 +1,5 @@
+import { ChartData } from "../../types";
+import { formatTooltip } from "../../helpers/chartHelpers";
 import { CHART_HEIGHT, CHART_WIDTH } from "../../lib/constants";
 import {
   RadarChart,
@@ -9,21 +11,11 @@ import {
   Legend,
 } from "recharts";
 
-interface ChartData {
-  year: string;
-  Liikevaihto: number;
-  Liiketulos: number;
-  Tilikauden_tulos: number;
-}
-
 interface CustomRadarChartProps {
   data: ChartData[];
 }
 
 const CustomRadarChart: React.FC<CustomRadarChartProps> = ({ data }) => {
-  const formatTooltip = (value: number) => {
-    return [`${(value / 1000000).toFixed(2)}M €`, ""];
-  };
   return (
     <ResponsiveContainer width={CHART_WIDTH} height={CHART_HEIGHT}>
       <RadarChart cx="50%" cy="50%" outerRadius="80%" data={data}>

@@ -1,3 +1,5 @@
+import { ChartData } from "../../types";
+import { formatTooltip, formatYAxis } from "../../helpers/chartHelpers";
 import { CHART_HEIGHT, CHART_WIDTH } from "../../lib/constants";
 import {
   LineChart,
@@ -9,27 +11,12 @@ import {
   ResponsiveContainer,
   Legend,
 } from "recharts";
-interface ChartData {
-  year: string;
-  Liikevaihto: number;
-  Liiketulos: number;
-  Tilikauden_tulos: number;
-}
 
 interface CustomLineChartProps {
   data: ChartData[];
 }
 
 const CustomLineChart: React.FC<CustomLineChartProps> = ({ data }) => {
-  const formatYAxis = (tickItem: number) => {
-    if (tickItem === 0) return "0";
-    return `${tickItem / 1000000}m €`;
-  };
-
-  const formatTooltip = (value: number) => {
-    return [`${(value / 1000000).toFixed(2)}M €`, ""];
-  };
-
   return (
     <>
       <ResponsiveContainer width={CHART_WIDTH} height={CHART_HEIGHT}>
