@@ -1,10 +1,11 @@
 import React from "react";
 import "./ChartDisplay.css";
-import CustomAreaChart from "../AreaChart/AreaChart";
-import CustomBarChart from "../BarChart/BarChart";
-import CustomLineChart from "../LineChart/LineChart";
-import CustomRadarChart from "../RadarChart/RadarChart";
-import { mapCompanyDataToChartData } from "../../utils/chartDataUtils"; // Adjust path as needed
+import ChartRenderer from "./ChartRenderer";
+import { mapCompanyDataToChartData } from "../../utils/chartDataUtils"; 
+import { CompanyDataError, ChartTypeError } from "../../utils/errors"; 
+import useErrorHandler from "../../hooks/useErrorHandler";
+
+type ChartType = "line" | "bar" | "area" | "radar";
 
 interface ChartDisplayProps {
   companyData: {
@@ -12,45 +13,59 @@ interface ChartDisplayProps {
     years: Array<{
       year: string;
       Liikevaihto: { amount: number };
-      Muutos: { amount: string };
-      Liiketulos: { amount: number };
-      Tilikauden_tulos: { amount: number };
-      Käyttökate: { amount: string };
-      Liikevoitto: { amount: string };
+      Muutos: { amount: string }; 
+      Liiketulos: { amount: number }; 
+      Tilikauden_tulos: { amount: number }; 
+      Käyttökate: { amount: string }; 
+      Liikevoitto: { amount: string }; 
     }>;
   };
-  chartType: string;
+  chartType: ChartType; 
 }
 
-const ChartDisplay: React.FC<ChartDisplayProps> = ({
-  companyData,
-  chartType,
-}) => {
-  const data = mapCompanyDataToChartData(companyData);
+const validateCompanyData = (data: ChartDisplayProps["companyData"]) => {
+  if (!data || !data.years || !Array.isArray(data.years)) {
+    throw new CompanyDataError("Invalid company data structure: 'years' array is required.");
+  }
+};
+
+const mapChartData = (data: ChartDisplayProps["companyData"]) => {
+  const chartData = mapCompanyDataToChartData(data);
+  if (!chartData || chartData.length === 0) {
+    throw new CompanyDataError("No valid data available for chart rendering.");
+  }
+  return chartData;
+};
+
+const validateChartType = (type: string) => {
+  if (!type) {
+    throw new ChartTypeError("Chart type is required.");
+  } else if (!["line", "bar", "area", "radar"].includes(type)) {
+    throw new ChartTypeError(`Invalid chart type: ${type}.`);
+  }
+};
+
+const ChartDisplay: React.FC<ChartDisplayProps> = ({ companyData, chartType }) => {
+  const { error, handleError } = useErrorHandler();
+
+  let data;
+  try {
+    validateCompanyData(companyData);
+    data = mapChartData(companyData); 
+    validateChartType(chartType);
+  } catch (error: unknown) {
+    const errorMessage = error instanceof Error ? error.message : "An unknown error occurred.";
+    handleError(errorMessage);
+    return <p>Error: {errorMessage}</p>;
+  }
 
   return (
     <div className="my-4">
       <h3>{companyData.name} Taloustiedot</h3>
 
-      {chartType === "line" ? (
-        <div className="chart-div">
-          <CustomLineChart data={data} />
-        </div>
-      ) : chartType === "bar" ? (
-        <div className="chart-div">
-          <CustomBarChart data={data} />
-        </div>
-      ) : chartType === "area" ? (
-        <div className="chart-div">
-          <CustomAreaChart data={data} />
-        </div>
-      ) : chartType === "radar" ? (
-        <div className="chart-div">
-          <CustomRadarChart data={data} />
-        </div>
-      ) : (
-        <p>No chart type selected.</p>
-      )}
+      <div className="chart-div">
+        <ChartRenderer chartType={chartType} data={data} />
+      </div>
     </div>
   );
 };

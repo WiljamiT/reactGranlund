@@ -6,7 +6,9 @@ import rejlersData from "../../src/data/data-rejlers.json";
 import sitowiceData from "../../src/data/data-sitowice.json";
 import "./Dashboard.css";
 import DashboardNav from "./dashboardnav/DashboardNav";
-import { useDashboardContext } from "../context/DashboardContext"; // Adjust the import path accordingly
+import { useDashboardContext } from "../context/DashboardContext";
+
+type ChartType = "line" | "bar" | "area" | "radar";
 
 const companyDataMap: { [key: string]: any } = {
   granlund: granlundData,
@@ -18,13 +20,15 @@ const companyDataMap: { [key: string]: any } = {
 const Dashboard: React.FC = () => {
   const { selectedCompany, chartType, setSelectedCompany, setChartType } = useDashboardContext();
 
+  const validChartType: ChartType = chartType as ChartType;
+
   const renderCharts = () => {
     const companiesToRender = selectedCompany === "all"
       ? Object.values(companyDataMap)
       : [companyDataMap[selectedCompany]];
   
     return companiesToRender.map((data, index) => (
-      <ChartDisplay key={index} companyData={data} chartType={chartType} />
+      <ChartDisplay key={index} companyData={data} chartType={validChartType} />
     ));
   };
 
