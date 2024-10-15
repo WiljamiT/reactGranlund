@@ -51,7 +51,7 @@ const ChartDisplay: React.FC<ChartDisplayProps> = ({
   companyData,
   chartType,
 }) => {
-  const { error, handleError } = useErrorHandler();
+  const { handleError } = useErrorHandler();
 
   let data;
   try {

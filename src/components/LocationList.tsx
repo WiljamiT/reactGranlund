@@ -1,5 +1,5 @@
-import React, { useCallback, useEffect, useState } from "react";
-import _ from "lodash";
+import React, { useState } from "react";
+import useDebounce from "../hooks/useDebounce"; // Adjust the path as necessary
 
 interface LocationData {
   id: number;
@@ -19,19 +19,7 @@ const LocationList: React.FC<LocationListProps> = ({
 }) => {
   const [searchQuery, setSearchQuery] = useState("");
 
-  const [debouncedQuery, setDebouncedQuery] = useState("");
-
-  const debounceSearch = useCallback(
-    _.debounce((query: string) => {
-      setDebouncedQuery(query);
-    }, 300),
-    [],
-  );
-
-  useEffect(() => {
-    debounceSearch(searchQuery);
-    return () => debounceSearch.cancel();
-  }, [searchQuery, debounceSearch]);
+  const debouncedQuery = useDebounce(searchQuery, 300);
 
   const filteredLocations = locations.filter((location) =>
     location.locationName.toLowerCase().includes(debouncedQuery.toLowerCase()),
