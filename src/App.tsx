@@ -12,14 +12,14 @@ import { DashboardProvider } from "./context/DashboardContext";
 function App() {
   return (
     <DashboardProvider>
-    <div className="App">
-      <Nav />
-      <InfoGrid />
-      <Map />
-      <Dashboard />
-      <IconCloudDemo />
-      <Footer />
-    </div>
+      <div className="App">
+        <Nav />
+        <InfoGrid />
+        <Map />
+        <Dashboard />
+        <IconCloudDemo />
+        <Footer />
+      </div>
     </DashboardProvider>
   );
 }

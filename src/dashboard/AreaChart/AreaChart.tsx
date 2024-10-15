@@ -51,12 +51,12 @@ const CustomAreaChart: React.FC<CustomAreaChartProps> = ({ data }) => {
           fill="#ffc658"
         />
         <Legend
-            layout="vertical"
-            align="center"
-            verticalAlign="bottom"
-            iconType="circle"
-            wrapperStyle={{ paddingTop: "20px" }}
-          />
+          layout="vertical"
+          align="center"
+          verticalAlign="bottom"
+          iconType="circle"
+          wrapperStyle={{ paddingTop: "20px" }}
+        />
       </AreaChart>
     </ResponsiveContainer>
   );

@@ -44,12 +44,12 @@ const CustomRadarChart: React.FC<CustomRadarChartProps> = ({ data }) => {
         />
         <Tooltip formatter={formatTooltip} />
         <Legend
-            layout="vertical"
-            align="center"
-            verticalAlign="bottom"
-            iconType="circle"
-            wrapperStyle={{ paddingTop: "20px" }}
-          />
+          layout="vertical"
+          align="center"
+          verticalAlign="bottom"
+          iconType="circle"
+          wrapperStyle={{ paddingTop: "20px" }}
+        />
       </RadarChart>
     </ResponsiveContainer>
   );

@@ -1,6 +1,11 @@
 import React from "react";
 import "./dashboardNav.css";
-import { TbChartArea, TbChartBar, TbChartLine, TbChartRadar } from "react-icons/tb";
+import {
+  TbChartArea,
+  TbChartBar,
+  TbChartLine,
+  TbChartRadar,
+} from "react-icons/tb";
 
 interface DashboardNavProps {
   handleCompanyChange: (value: string) => void;

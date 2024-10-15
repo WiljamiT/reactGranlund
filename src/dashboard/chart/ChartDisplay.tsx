@@ -1,8 +1,8 @@
 import React from "react";
 import "./ChartDisplay.css";
 import ChartRenderer from "./ChartRenderer";
-import { mapCompanyDataToChartData } from "../../utils/chartDataUtils"; 
-import { CompanyDataError, ChartTypeError } from "../../utils/errors"; 
+import { mapCompanyDataToChartData } from "../../utils/chartDataUtils";
+import { CompanyDataError, ChartTypeError } from "../../utils/errors";
 import useErrorHandler from "../../hooks/useErrorHandler";
 
 type ChartType = "line" | "bar" | "area" | "radar";
@@ -13,19 +13,21 @@ interface ChartDisplayProps {
     years: Array<{
       year: string;
       Liikevaihto: { amount: number };
-      Muutos: { amount: string }; 
-      Liiketulos: { amount: number }; 
-      Tilikauden_tulos: { amount: number }; 
-      Käyttökate: { amount: string }; 
-      Liikevoitto: { amount: string }; 
+      Muutos: { amount: string };
+      Liiketulos: { amount: number };
+      Tilikauden_tulos: { amount: number };
+      Käyttökate: { amount: string };
+      Liikevoitto: { amount: string };
     }>;
   };
-  chartType: ChartType; 
+  chartType: ChartType;
 }
 
 const validateCompanyData = (data: ChartDisplayProps["companyData"]) => {
   if (!data || !data.years || !Array.isArray(data.years)) {
-    throw new CompanyDataError("Invalid company data structure: 'years' array is required.");
+    throw new CompanyDataError(
+      "Invalid company data structure: 'years' array is required.",
+    );
   }
 };
 
@@ -45,16 +47,20 @@ const validateChartType = (type: string) => {
   }
 };
 
-const ChartDisplay: React.FC<ChartDisplayProps> = ({ companyData, chartType }) => {
+const ChartDisplay: React.FC<ChartDisplayProps> = ({
+  companyData,
+  chartType,
+}) => {
   const { error, handleError } = useErrorHandler();
 
   let data;
   try {
     validateCompanyData(companyData);
-    data = mapChartData(companyData); 
+    data = mapChartData(companyData);
     validateChartType(chartType);
   } catch (error: unknown) {
-    const errorMessage = error instanceof Error ? error.message : "An unknown error occurred.";
+    const errorMessage =
+      error instanceof Error ? error.message : "An unknown error occurred.";
     handleError(errorMessage);
     return <p>Error: {errorMessage}</p>;
   }

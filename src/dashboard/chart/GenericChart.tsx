@@ -3,11 +3,11 @@ import CustomLineChart from "../LineChart/LineChart";
 import CustomBarChart from "../BarChart/BarChart";
 import CustomAreaChart from "../AreaChart/AreaChart";
 import CustomRadarChart from "../RadarChart/RadarChart";
-import { ChartTypeError } from "../../utils/errors"; 
+import { ChartTypeError } from "../../utils/errors";
 
 interface GenericChartProps {
   chartType: string;
-  data: any; 
+  data: any;
 }
 
 const GenericChart: React.FC<GenericChartProps> = ({ chartType, data }) => {
@@ -27,7 +27,9 @@ const GenericChart: React.FC<GenericChartProps> = ({ chartType, data }) => {
       ChartComponent = CustomRadarChart;
       break;
     default:
-      throw new ChartTypeError(`Invalid chart type: '${chartType}'. Valid types are 'line', 'bar', 'area', or 'radar'.`);
+      throw new ChartTypeError(
+        `Invalid chart type: '${chartType}'. Valid types are 'line', 'bar', 'area', or 'radar'.`,
+      );
   }
 
   if (!data || data.length === 0) {

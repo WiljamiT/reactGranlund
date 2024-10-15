@@ -17,7 +17,6 @@ const LocationList: React.FC<LocationListProps> = ({
   selectedLocation,
   onLocationClick,
 }) => {
-
   const [searchQuery, setSearchQuery] = useState("");
 
   const [debouncedQuery, setDebouncedQuery] = useState("");
@@ -26,10 +25,8 @@ const LocationList: React.FC<LocationListProps> = ({
     _.debounce((query: string) => {
       setDebouncedQuery(query);
     }, 300),
-    []
+    [],
   );
-
-
 
   useEffect(() => {
     debounceSearch(searchQuery);
@@ -37,7 +34,7 @@ const LocationList: React.FC<LocationListProps> = ({
   }, [searchQuery, debounceSearch]);
 
   const filteredLocations = locations.filter((location) =>
-    location.locationName.toLowerCase().includes(debouncedQuery.toLowerCase())
+    location.locationName.toLowerCase().includes(debouncedQuery.toLowerCase()),
   );
 
   return (

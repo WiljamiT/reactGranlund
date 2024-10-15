@@ -3,7 +3,7 @@ import GenericChart from "./GenericChart";
 
 interface ChartRendererProps {
   chartType: string;
-  data: any; 
+  data: any;
 }
 
 const ChartRenderer: React.FC<ChartRendererProps> = ({ chartType, data }) => {

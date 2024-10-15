@@ -18,15 +18,17 @@ const companyDataMap: { [key: string]: any } = {
 };
 
 const Dashboard: React.FC = () => {
-  const { selectedCompany, chartType, setSelectedCompany, setChartType } = useDashboardContext();
+  const { selectedCompany, chartType, setSelectedCompany, setChartType } =
+    useDashboardContext();
 
   const validChartType: ChartType = chartType as ChartType;
 
   const renderCharts = () => {
-    const companiesToRender = selectedCompany === "all"
-      ? Object.values(companyDataMap)
-      : [companyDataMap[selectedCompany]];
-  
+    const companiesToRender =
+      selectedCompany === "all"
+        ? Object.values(companyDataMap)
+        : [companyDataMap[selectedCompany]];
+
     return companiesToRender.map((data, index) => (
       <ChartDisplay key={index} companyData={data} chartType={validChartType} />
     ));
@@ -38,9 +40,7 @@ const Dashboard: React.FC = () => {
         handleCompanyChange={setSelectedCompany}
         handleChartTypeChange={setChartType}
       />
-      <div className="chart-container">
-        {renderCharts()}
-      </div>
+      <div className="chart-container">{renderCharts()}</div>
     </div>
   );
 };

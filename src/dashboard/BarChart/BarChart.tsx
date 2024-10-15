@@ -33,12 +33,12 @@ const CustomBarChart: React.FC<CustomBarChartProps> = ({ data }) => {
         <Bar dataKey="Liiketulos" fill="#82ca9d" />
         <Bar dataKey="Tilikauden_tulos" fill="#ffc658" />
         <Legend
-            layout="vertical"
-            align="center"
-            verticalAlign="bottom"
-            iconType="circle"
-            wrapperStyle={{ paddingTop: "20px" }}
-          />
+          layout="vertical"
+          align="center"
+          verticalAlign="bottom"
+          iconType="circle"
+          wrapperStyle={{ paddingTop: "20px" }}
+        />
       </BarChart>
     </ResponsiveContainer>
   );
