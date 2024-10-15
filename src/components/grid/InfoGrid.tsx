@@ -50,7 +50,7 @@ const InfoGrid = () => {
 
         <div className="info-grid-container">
           <h2>
-            {infoData.headers.office} <NumberTickerDemo />
+            {infoData.headers.office}<NumberTickerDemo />
           </h2>
           <div className="info-grid">
             {infoData.locations.map((info, index) => (

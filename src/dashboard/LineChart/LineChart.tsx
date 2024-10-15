@@ -36,9 +36,10 @@ const CustomLineChart: React.FC<CustomLineChartProps> = ({ data }) => {
           <Line type="monotone" dataKey="Liiketulos" stroke="#82ca9d" />
           <Line type="monotone" dataKey="Tilikauden_tulos" stroke="#ffc658" />
           <Legend
-            layout={window.innerWidth < 400 ? "vertical" : "horizontal"}
-            verticalAlign="bottom"
+            layout="vertical"
             align="center"
+            verticalAlign="bottom"
+            iconType="circle"
             wrapperStyle={{ paddingTop: "20px" }}
           />
         </LineChart>

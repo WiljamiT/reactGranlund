@@ -22,7 +22,7 @@ const CustomAreaChart: React.FC<CustomAreaChartProps> = ({ data }) => {
     <ResponsiveContainer width={CHART_WIDTH} height={CHART_HEIGHT}>
       <AreaChart
         data={data}
-        margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
+        margin={{ top: 20, right: 20, left: 0, bottom: 0 }}
       >
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="year" />
@@ -51,11 +51,12 @@ const CustomAreaChart: React.FC<CustomAreaChartProps> = ({ data }) => {
           fill="#ffc658"
         />
         <Legend
-          layout="horizontal"
-          verticalAlign="bottom"
-          align="center"
-          wrapperStyle={{ paddingTop: "20px" }}
-        />
+            layout="vertical"
+            align="center"
+            verticalAlign="bottom"
+            iconType="circle"
+            wrapperStyle={{ paddingTop: "20px" }}
+          />
       </AreaChart>
     </ResponsiveContainer>
   );

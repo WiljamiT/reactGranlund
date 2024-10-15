@@ -18,7 +18,7 @@ interface CustomRadarChartProps {
 const CustomRadarChart: React.FC<CustomRadarChartProps> = ({ data }) => {
   return (
     <ResponsiveContainer width={CHART_WIDTH} height={CHART_HEIGHT}>
-      <RadarChart cx="50%" cy="50%" outerRadius="80%" data={data}>
+      <RadarChart cx="50%" cy="45%" outerRadius="75%" data={data}>
         <PolarGrid />
         <PolarAngleAxis dataKey="year" />
         <Radar
@@ -44,11 +44,12 @@ const CustomRadarChart: React.FC<CustomRadarChartProps> = ({ data }) => {
         />
         <Tooltip formatter={formatTooltip} />
         <Legend
-          layout="horizontal"
-          verticalAlign="bottom"
-          align="center"
-          wrapperStyle={{ paddingTop: "20px" }}
-        />
+            layout="vertical"
+            align="center"
+            verticalAlign="bottom"
+            iconType="circle"
+            wrapperStyle={{ paddingTop: "20px" }}
+          />
       </RadarChart>
     </ResponsiveContainer>
   );

@@ -12,11 +12,13 @@ const slugs = [
   "git",
   "github",
   "visualstudiocode",
+  "dotnet",
+  "playwright",
 ];
 
 export function IconCloudDemo() {
   return (
-    <div className="relative flex size-full max-w-lg items-center justify-center overflow-hidden rounded-lg border bg-background px-20 pb-20 pt-8 ">
+    <div className="relative flex size-full max-w-lg items-center justify-center overflow-hidden rounded-lg border bg-background px-20 pb-20 pt-4 ">
       <IconCloud iconSlugs={slugs} />
     </div>
   );

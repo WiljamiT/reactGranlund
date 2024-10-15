@@ -20,7 +20,7 @@ interface CustomBarChartProps {
 const CustomBarChart: React.FC<CustomBarChartProps> = ({ data }) => {
   return (
     <ResponsiveContainer width={CHART_WIDTH} height={CHART_HEIGHT}>
-      <BarChart data={data} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+      <BarChart data={data} margin={{ top: 20, right: 20, left: 0, bottom: 0 }}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="year" />
         <YAxis
@@ -33,11 +33,12 @@ const CustomBarChart: React.FC<CustomBarChartProps> = ({ data }) => {
         <Bar dataKey="Liiketulos" fill="#82ca9d" />
         <Bar dataKey="Tilikauden_tulos" fill="#ffc658" />
         <Legend
-          layout="horizontal"
-          verticalAlign="bottom"
-          align="center"
-          wrapperStyle={{ paddingTop: "20px" }}
-        />
+            layout="vertical"
+            align="center"
+            verticalAlign="bottom"
+            iconType="circle"
+            wrapperStyle={{ paddingTop: "20px" }}
+          />
       </BarChart>
     </ResponsiveContainer>
   );
