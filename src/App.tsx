@@ -8,6 +8,7 @@ import { IconCloudDemo } from "./components/Icon";
 import Footer from "./components/footer/Footer";
 import Dashboard from "./dashboard/Dashboard";
 import { DashboardProvider } from "./context/DashboardContext";
+import Chat from "./components/chat/Chat";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <InfoGrid />
         <Map />
         <Dashboard />
+        <Chat />
         <IconCloudDemo />
         <Footer />
       </div>
